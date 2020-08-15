@@ -6,7 +6,7 @@ body {
     --my-blue: #00d2ff;
 }
 
-h, h1, h2, h3, h4, p, button, a {
+h, h1, h2, h3, h4, p, button, a, body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 
@@ -85,6 +85,7 @@ Header
 }
 
 .logo {
+    font-size: 24px;
     min-width: fit-content;
 }
 
@@ -293,4 +294,73 @@ Boards
     width: 100%;
     height: 2px;
     background-color: var(--my-blue);
+}
+
+/**************************
+About
+*************************/
+
+.about .bg-img {
+    height: 90%;
+}
+
+.about {
+    position: relative;
+    margin-top: 200px;
+    width: 100%;
+    height: 640px;
+}
+
+.about .container {
+    max-width: unset;
+}
+
+.about .wrapper {
+    justify-content: flex-start;
+    margin: 256px 5% auto 0;
+}
+
+.about .text {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.about .article {
+    padding: 0 64px 0 256px;
+    align-items: center;
+    max-width: 340px;
+    background-color: white;
+}
+
+.about .title {
+    margin: 32px auto 32px auto;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.about .view-more {
+    margin-top: 32px;
+    font-size: 12px;
+    align-self: flex-start;
+    margin-bottom: 32px;
+}
+
+.video {
+    width: 500px;
+    height: 300px;
+    background-color: red;
+    align-self: flex-end;
+    margin-left: 128px;
+}
+
+/**************************
+People
+*************************/
+
+.people {
+    width: 100%;
+    height: 128px;
+    margin-top: 128px;
+    background-color: red;
 }
