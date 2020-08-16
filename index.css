@@ -428,14 +428,14 @@ People
 Updates
 *************************/
 
+.updates {
+    padding-bottom: 128px;
+}
+
 .updates .h2 {
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 64px;
-}
-
-.updates > * {
-
 }
 
 .update {
@@ -452,8 +452,14 @@ Updates
     color: inherit;
 }
 
+.update {
+    align-items: center;
+    margin: 0 16px;
+}
+
 .update:hover {
     color: var(--my-blue);
+    box-shadow: 0 0 16px rgba(128, 128, 128, 0.5);
 }
 
 .update-img {
@@ -461,10 +467,131 @@ Updates
     max-height: 200px;
 }
 
+.update figure {
+    box-shadow: none;
+}
+
 .updates .button {
     margin-top: 32px;
 }
 
 .updates .list {
-    max-width: 880px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/**************************
+Gallery
+*************************/
+
+.gallery {
+    height: 128px;
+    padding-top: 64px;
+}
+
+.gallery .photos {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    grid-template-areas: 
+     "one two"
+     "three four"
+     "five five";
+}
+
+.inst-profile {
+    justify-content: flex-start;
+    padding: 16px 0;
+    height: 32px;
+    grid-area: five;
+}
+
+.inst-profile {
+    background-color: white;
+}
+
+.inst-profile .inst-logo {
+    margin: 0 5%;
+}
+
+.inst-profile .follow {
+    text-transform: uppercase;
+    color: var(--my-blue);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.inst-profile .username {
+    margin-left: 5%;
+}
+
+.gallery .facebook {
+    width: 256px;
+    height: 256px;
+    margin: 128px auto auto 32px;
+    background: linear-gradient( #385490, #385490 50%, white 20px, white 40px)
+}
+
+/**************************
+Gallery
+*************************/
+
+.footer {
+    margin-top: 256px;
+    background-color: black;
+    width: 100%;
+    padding-bottom: 64px;
+}
+
+.footer .nav {
+    padding: 5% 5%;
+    align-self: flex-end;
+    max-height: 128px;
+    margin-right: 9%;
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    column-gap: 64px;
+}
+
+.hr-wave.yellow {
+    background-image: url('images/yellow_wave.png');
+    width: 32px;
+    height: 8px;
+}
+
+.nav-link {
+    margin-bottom: 24px;
+}
+
+.footer .link {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: white;
+    margin: 0 auto auto 32px;
+}
+
+.footer .created-by {
+    margin-top: 86px;
+    color: #4d4d4d;
+    font-size: 12px;
+    justify-content: flex-start;
+}
+
+.footer .created-by .second {
+    margin-left: 32px;
+}
+
+.footer .newsletter {
+    align-self: flex-end;
+}
+
+.input input[type="text"] {
+    font-size: 14px;
+    background-color: black;
+    border: solid 1px gray;
+    border-radius: 8px;
+    height: 1.5em;
+}
+
+.input input[type="text"]::placeholder {
+    color: gray;
 }
