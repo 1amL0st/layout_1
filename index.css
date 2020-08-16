@@ -361,7 +361,110 @@ People
 
 .people {
     width: 100%;
-    height: 128px;
     margin-top: 128px;
-    background-color: red;
+}
+
+.people .container {
+    justify-content: center;
+    height: 586px;
+}
+
+.people .wrapper {
+    justify-content: center;
+    width: 80%;
+}
+
+.people .list {
+    margin: 0 32px;
+    justify-content: center;
+    width: fit-content;
+}
+
+.human .avatar{
+    width: 100px;
+    height: 100px;
+}
+
+.human {
+    font-family: 'Raleway',  sans-serif;
+    font-size: 14px;
+    width: 240px;
+    box-shadow: 0 0 16px rgba(128, 128, 128, 0.2);
+}
+
+.people .list > *:nth-child(even){
+    margin-top: 32px;
+}
+
+.human .hr-wave {
+    margin: 16px auto 16px auto;
+}
+
+.human .name {
+    font-size: 18px;
+    color: var(--my-blue);
+}
+
+.arrow {
+    min-width: 48px;
+    min-height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px gray;
+}
+
+.arrow:hover {
+    cursor: grab;
+}
+
+.arrow img {
+    margin: auto;
+}
+
+.arrow.right {
+    transform: rotate(180deg);
+}
+
+/**************************
+Updates
+*************************/
+
+.updates .h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 64px;
+}
+
+.updates > * {
+
+}
+
+.update {
+    max-width: 200px;
+    text-decoration: none;
+    color: black;
+}
+
+.update figcaption {
+    margin-top: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    max-width: 90%;
+    color: inherit;
+}
+
+.update:hover {
+    color: var(--my-blue);
+}
+
+.update-img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.updates .button {
+    margin-top: 32px;
+}
+
+.updates .list {
+    max-width: 880px;
 }
