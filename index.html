@@ -7,10 +7,12 @@
         
         <title>Surfers Co</title>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
     </head>
 
-    <body>
+    <body onload="OnLoadFunction()">
         <!--Header section-->
         <header class="header">
             <img class="bg-img" alt="" src="images/header/bg.png">
@@ -69,9 +71,29 @@
                             <h2 class="board-name">JR Surfboards The Donny Stoker
                                 Yellow/Green Rail Fade</h2>
 
-                            <div class="rate row">
-                                <span class="count">(52)</span>
-                                <span class="date row">05/25</span>
+                            <div class="stats row">
+                                <div class="rate row">
+                                    <div class="stars row">
+                                        <span class="fa fa-star-o"></span> <!--replace fa-star-o with fa-star -->
+                                        <span class="fa fa-star-o"></span>
+                                        <span class="fa fa-star-o"></span>
+                                        <span class="fa fa-star-o"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <a class="link count" href="">(52)</a>
+                                </div>
+
+                                <div class="panel column">
+                                    <div class="switch row">
+                                    <div class="arrow left row">
+                                        <img class="" alt="" src="images/people/left_arrow.png">
+                                    </div>
+                                    <div class="arrow right row">
+                                        <img class="" alt="" src="images/people/left_arrow.png">
+                                    </div>
+                                    </div>
+                                    <span class="date row">05/25</span>
+                                </div>
                             </div>
 
                             <div class="text-selector">
@@ -267,11 +289,16 @@
                     </div>
 
                     <div class="newsletter">
-                        <h2>Subscribe to our newsletter</h2>
-                        <div class="input">
+                        <h2 class="h2">Subscribe to our newsletter</h2>
+                        <div class="input row">
                             <input type="text" placeholder="Your e-mail">
+
+                            <div class="arrow right row">
+                                <img class="" alt="" src="images/people/left_arrow.png">
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </footer>

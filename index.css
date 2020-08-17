@@ -138,7 +138,7 @@ Boards
     height: 600px;
     background-color: white;
     margin-top: -128px;
-    overflow: hidden;
+    /* overflow: hidden; */
     --border-color: rgba(0.2, 0.2, 0.2, 0.25);
     box-shadow: -8px -8px 8px var(--border-color), 8px 8px 8px var(--border-color);
 }
@@ -214,6 +214,21 @@ Boards
     font-size: 12px;
 }
 
+.board-info .stats .panel {
+    margin-right: 0;
+    width: 4em;
+}
+
+.switch .arrow {
+    border-radius: unset;
+    box-shadow: none;
+    background-color: #f2d800;
+}
+
+.switch .arrow img {
+    filter: brightness(0) invert(1);
+}
+
 .board .date {
     background-color: black;
     color: white;
@@ -222,8 +237,21 @@ Boards
     justify-content: center;
 }
 
-.board-info .rate {
+.board-info .stats {
     margin: 5% auto 5% auto;
+}
+
+.board-info .rate {
+    justify-content: flex-start;
+}
+
+.rate .stars {
+    width: fit-content;
+    justify-content: flex-start;    
+}
+
+.rate .count {
+    margin-left: 16px;
 }
 
 .board .text-selector {
@@ -275,6 +303,10 @@ Boards
     color: white;
     border: none;
     background-color: var(--my-blue);
+}
+
+.button:hover {
+    cursor: grab;
 }
 
 .view-more {
@@ -396,8 +428,15 @@ People
     margin-top: 32px;
 }
 
+.hr-wave {
+    width: 32px;
+    height: 8px;
+    background-image: url('images/yellow_wave.png');
+}
+
 .human .hr-wave {
     margin: 16px auto 16px auto;
+    filter: brightness(0);
 }
 
 .human .name {
@@ -407,7 +446,7 @@ People
 
 .arrow {
     min-width: 48px;
-    min-height: 48px;
+    height: 48px;
     border-radius: 50%;
     box-shadow: 0 0 10px gray;
 }
@@ -525,10 +564,10 @@ Gallery
 }
 
 .gallery .facebook {
-    width: 256px;
-    height: 256px;
+    width: 300px;
+    height: 200px;
     margin: 128px auto auto 32px;
-    background: linear-gradient( #385490, #385490 50%, white 20px, white 40px)
+    background: linear-gradient( #385490, #385490 50%, lightgray 20px, lightgray 40px)
 }
 
 /**************************
@@ -550,12 +589,6 @@ Gallery
     display: grid;
     grid-template-columns: repeat(2, min-content);
     column-gap: 64px;
-}
-
-.hr-wave.yellow {
-    background-image: url('images/yellow_wave.png');
-    width: 32px;
-    height: 8px;
 }
 
 .nav-link {
@@ -582,16 +615,44 @@ Gallery
 
 .footer .newsletter {
     align-self: flex-end;
+    margin-right: 156px;
+}
+
+.newsletter .h2 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.newsletter .arrow {
+    box-shadow: none;
+    min-width: unset;
+    min-height: unset;
+    max-width: 20px;
+    max-height: 20px;
+    background-color: var(--my-blue);
+}
+
+.newsletter .arrow img {
+    filter: brightness(0) invert(1);
+}
+
+.newsletter .input {
+    font-size: 14px;
 }
 
 .input input[type="text"] {
-    font-size: 14px;
     background-color: black;
     border: solid 1px gray;
     border-radius: 8px;
     height: 1.5em;
+    font-size: inherit;
 }
 
 .input input[type="text"]::placeholder {
     color: gray;
+}
+
+.fa-star {
+    color: orange;
 }
